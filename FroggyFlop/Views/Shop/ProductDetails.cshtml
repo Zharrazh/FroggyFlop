@@ -1,0 +1,56 @@
+﻿@model FroggyFlop.Models.ViewModels.Shop.ProductVM
+
+@{
+    ViewBag.Title = Model.Name;
+}
+
+<h2>@Model.Name</h2>
+
+<div class="row">
+    <div class="col-sm-12 col-md-5">
+        <img src="/Images/Uploads/Products/@Model.Id/Thumbs/@Model.ImageName" alt=@Model.ImageName />
+    </div>
+    <div class="col-sm-12 col-md-7">
+        @Html.DisplayNameFor(model => model.Description)
+        @Html.DisplayFor(model => model.Description)
+        <br />
+        @Html.DisplayNameFor(model => model.Price)
+        @Html.DisplayFor(model => model.Price)
+
+        <div class="addtocart col">
+            <a href="#" class="addtocart btn btn-success">Add to cart</a>
+            <span class="loader">
+                <img src="~/Content/img/ajax-loader.gif" width="150" height="100" />
+            </span>
+            <div class="ajaxmsg">
+                The product has been added to your cart
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+
+<div class="row">
+    <h3>Product gallety</h3>
+    <div class="col-sm-12 fancybox-div">
+        <br />
+        <br />
+        <div class="row">
+            @foreach (var item in Model.GalleryImages)
+            {
+                <div class="col">
+                    <a class="fancybox" rel="gallery1" href="/Images/Uploads/Products/@Model.Id/Gallery/@item">
+                        <img src="/Images/Uploads/Products/@Model.Id/Gallery/Thumbs/@item">
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <link href="~/Content/jquery.fancybox.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.fancybox.js"></script>
+    <script src="~/Scripts/ShopJS/productDatailsViewJs.js"></script>
+}

@@ -1,0 +1,7 @@
+﻿@model FroggyFlop.Models.ViewModels.Account.UserNavPartialVM
+
+
+    @if (Model != null)
+    {
+        <a href="/account/user-profile" style="text-decoration:none">&nbsp;&nbsp;(@Model.FirstName @Model.LastName)</a>
+    }
