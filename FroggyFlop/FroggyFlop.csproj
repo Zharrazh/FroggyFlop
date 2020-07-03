@@ -888,11 +888,13 @@
     <Content Include="Areas\Admin\Views\Shop\Products.cshtml" />
     <Content Include="Areas\Admin\Views\Shop\EditProduct.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
-    <None Include="Scripts\jquery-3.5.0.intellisense.js" />
-    <Content Include="Scripts\jquery-3.5.0.js" />
-    <Content Include="Scripts\jquery-3.5.0.min.js" />
-    <Content Include="Scripts\jquery-3.5.0.slim.js" />
-    <Content Include="Scripts\jquery-3.5.0.slim.min.js" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery.fancybox-buttons.js" />
@@ -1024,8 +1026,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.5.0.slim.min.map" />
-    <Content Include="Scripts\jquery-3.5.0.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
